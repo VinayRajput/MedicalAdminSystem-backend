@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.3</version>
+        <version>3.1.8</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.MASApp</groupId>
-    <artifactId>MedicalAdminSystem</artifactId>
+    <groupId>com.HMSApp</groupId>
+    <artifactId>Hospital-Management-System</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Medical Admin System</name>
-    <description>Medical Admin System</description>
+    <name>Hospital-Management-System</name>
+    <description>Hospital Management System</description>
     <url/>
     <licenses>
         <license/>
@@ -62,6 +62,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.1.8</version>
             </plugin>
         </plugins>
     </build>

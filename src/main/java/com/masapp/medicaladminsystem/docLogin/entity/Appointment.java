@@ -14,7 +14,7 @@ public class Appointment {
     private String name;
 
     @Column(name = "age")
-    private String age;
+    private Integer age;
 
     @Column(name = "symptoms")
     private String symptoms;
@@ -22,7 +22,7 @@ public class Appointment {
     @Column(name = "number")
     private String number;
 
-    public Appointment(long id, String name, String age, String symptoms, String number) {
+    public Appointment(long id, String name, Integer age, String symptoms, String number) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -50,11 +50,11 @@ public class Appointment {
         this.name = name;
     }
 
-    public String getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 

@@ -29,7 +29,10 @@ public class Patient {
     @Column(name = "fees")
     private String fees;
 
-    public Patient(long id, String name, String age, String bloodType, String prescription, String dose, String fees) {
+    @Column(name = "urgency")
+    private String urgency;
+
+    public Patient(long id, String name, String age, String bloodType, String prescription, String dose, String fees, String urgency) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -37,6 +40,7 @@ public class Patient {
         this.prescription = prescription;
         this.dose = dose;
         this.fees = fees;
+        this.urgency = urgency;
     }
 
     public Patient() {
@@ -97,5 +101,13 @@ public class Patient {
 
     public void setFees(String fees) {
         this.fees = fees;
+    }
+
+    public String getUrgency() {
+        return urgency;
+    }
+
+    public void setUrgency(String urgency) {
+        this.urgency = urgency;
     }
 }
